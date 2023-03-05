@@ -7,7 +7,7 @@ import MajorCitiesWeatherButton from "./MajorCitiesWeatherButton";
 
 const Forecast = () => {
   const [daily, setDaily] = useState(null);
-
+  const [error, setError] = useState("");
   const [location, setLocation] = useState({
     lat: 40.6281,
     long: -73.9467,
@@ -48,6 +48,7 @@ const Forecast = () => {
       key={idx}
       setLocation={setLocation}
       location={zips.getByZipCode(zip)}
+      setError={setError}
     />
   ));
 
@@ -70,7 +71,7 @@ const Forecast = () => {
         <div className="top-[-50px] right-[-63px] absolute w-96 h-96 bg-gradient-to-br rounded-full from-orange-300 to-red-400 drop-shadow-[0_80px_80px_#F4ECD4]"></div>
       </div>
       <div className="flex-1 flex flex-col">
-        <ZipcodeForm setLocation={setLocation} />
+        <ZipcodeForm setLocation={setLocation} error={error} setError={setError} />
         <div className="m-6 flex justify-center items-center text-center text-lg font-nunito text-[#B7B1B0]">
           <div className="hidden md:block w-32 mx-8 h-1 rounded-lg bg-[#D5CFCE]"></div>
           or select a city

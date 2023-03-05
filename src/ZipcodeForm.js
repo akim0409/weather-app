@@ -2,9 +2,9 @@ import { useState } from "react";
 import zips from "zips";
 
 const ZipcodeForm = (props) => {
-  const { setLocation } = props;
+  const { setLocation, error, setError } = props;
   const [zipcode, setZipcode] = useState("");
-  const [error, setError] = useState("");
+
 
   return (
     <form

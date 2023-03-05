@@ -1,10 +1,11 @@
 const MajorCitiesWeatherButton = (props) => {
-  const { setLocation, location } = props;
+  const { setLocation, location, setError } = props;
 
   return (
     <button
       className="w-32 rounded-lg bg-orange-300 text-lg text-white text-center py-3 m-2 hover:bg-orange-400"
       onClick={() => {
+        setError('');
         setLocation({
           lat: location.lat,
           long: location.long,
