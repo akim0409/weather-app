@@ -1,0 +1,12 @@
+import React, {useEffect} from "react";
+import { ReactComponent as Cloudy } from "./cloudy.svg"
+
+const CloudyAnimation = () => {
+    useEffect(() => {
+        (function(s,i,u,o,c,w,d,t,n,x,e,p,a,b){(a=Array.from(d.querySelectorAll('svg#' + i.root)).filter(n=> !n.svgatorPlayer)[0]||{}).svgatorPlayer={ready:(function(a){b=[];return function(c){return c?(b.push(c),a.svgatorPlayer):b}})(a)};w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s','?','v','=',c].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('91c80d77',{"root":"eSvuXcYKN3o1","version":"2022-05-04","animations":[{"elements":{"eSvuXcYKN3o2":{"transform":{"data":{"o":{"x":414.708054,"y":250.8965,"type":"corner"},"r":-11,"t":{"x":-414.708053,"y":-250.896499}},"keys":{"s":[{"t":0,"v":{"x":1,"y":1},"e":[0.42,0,0.58,1]},{"t":1500,"v":{"x":0.9,"y":0.9},"e":[0.42,0,0.58,1]},{"t":3000,"v":{"x":1,"y":1},"e":[0.42,0,0.58,1]}]}}},"eSvuXcYKN3o11":{"transform":{"data":{"t":{"x":-214.794552,"y":-342.290878}},"keys":{"o":[{"t":0,"v":{"x":216.056853,"y":342.294204,"type":"corner"},"e":[0.42,0,0.58,1]},{"t":1500,"v":{"x":215.056853,"y":309.294204,"type":"corner"},"e":[0.42,0,0.58,1]},{"t":3000,"v":{"x":216.056853,"y":342.294204,"type":"corner","start":{"x":216.056853,"y":342.294204},"end":{"x":216.056853,"y":342.294204}}}]}}},"eSvuXcYKN3o14":{"transform":{"data":{"t":{"x":-422.017196,"y":-410.668641}},"keys":{"o":[{"t":0,"v":{"x":422.017197,"y":410.668641,"type":"corner"},"e":[0.42,0,1,1]},{"t":1500,"v":{"x":421.02,"y":377.67,"type":"corner"},"e":[0.42,0,1,1]},{"t":3000,"v":{"x":422.017197,"y":410.668641,"type":"corner","start":{"x":422.017197,"y":410.668641},"end":{"x":422.017197,"y":410.668641}}}]}}}},"s":"MDOA1Yzk2M2Q3ZYjkwOGQ3YzhmRODQ4YTg5M2QB1NTRlNGI0YjJRiUDQ3RTNkNG2Y4NDhkODA3TZThmRTg0OGEH4OTNkNTU0YzOQ3M2Q4NDhmOQDA4ZFA3YzhmGODQ4YTg5TzhJlM2Q1NTRiNDDczZDgxODQ4NAzg3M2Q1NTRjSNDczZDdjODcE4ZjgwOGQ4OVXY3YzhmODAzZBE41NTgxN2M4ANzhlSjgwNDcXzZDhlOGI4MDYgwN2YzZDU1NSGM0NzNkODE4LYkg4ZTNkNTUM1MUw0Yjk4"}],"options":"MDLAxMDgyTTI5NL2E3YjY4Nzk3QYjI5NDEyOTcMzNzY2ODZiMjIk4NA|"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2022-05-04',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')
+    }, []);
+
+    return <Cloudy className="w-44 mx-4" />
+};
+
+export default CloudyAnimation;
