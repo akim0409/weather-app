@@ -75,7 +75,8 @@ export const dateToDayString = (d) => {
 };
 
 export const formatDateString = (date) => {
-  const [month, day] = date.split("-");
+  // eslint-disable-next-line
+  const [_, month, day] = date.split("-");
   const monthWords = {
     "01": "Jan",
     "02": "Feb",
