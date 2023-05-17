@@ -52,6 +52,10 @@ const Forecast = () => {
     />
   ));
 
+  const onClickMailtoHandler = () => {
+    window.location.href = `mailto:autumnkim0409@gmail.com`;
+  };
+
   return (
     <div className="flex flex-col bg-[#FCF6F5]">
       <div className="flex justify-center overflow-hidden relative flex md:rounded-b-[50%]  bg-[#F9D9CC] text-xl text-[#5D494A] font-nunito">
@@ -71,7 +75,11 @@ const Forecast = () => {
         <div className="top-[-50px] right-[-63px] absolute w-96 h-96 bg-gradient-to-br rounded-full from-orange-300 to-red-400 drop-shadow-[0_80px_80px_#F4ECD4]"></div>
       </div>
       <div className="flex-1 flex flex-col">
-        <ZipcodeForm setLocation={setLocation} error={error} setError={setError} />
+        <ZipcodeForm
+          setLocation={setLocation}
+          error={error}
+          setError={setError}
+        />
         <div className="m-6 flex justify-center items-center text-center text-lg font-nunito text-[#B7B1B0]">
           <div className="hidden md:block w-32 mx-8 h-1 rounded-lg bg-[#D5CFCE]"></div>
           or select a city
@@ -84,9 +92,25 @@ const Forecast = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#476D90] text-[#A0C6E9] flex justify-center py-4">
+      <div className="bg-[#476D90] text-[#A0C6E9] flex justify-center items-center py-4">
         <div>By Autumn Kim</div>
-        <div className="ml-4">autumnkim0409@gmail.com</div>
+        <button className="ml-4" onClick={onClickMailtoHandler}>
+          autumnkim0409@gmail.com
+        </button>
+        <a
+          href="https://www.linkedin.com/in/autumn-k-a855a013b/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="text-2xl mx-4 fa-brands fa-linkedin hover:text-orange-400 cursor-pointer"></i>
+        </a>
+        <a
+          href="https://github.com/akim0409/weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="text-2xl fa-brands fa-github hover:text-orange-400 cursor-pointer"></i>
+        </a>
       </div>
     </div>
   );
