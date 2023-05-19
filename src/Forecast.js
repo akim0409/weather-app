@@ -94,7 +94,7 @@ const Forecast = () => {
       </div>
       <div className="bg-[#476D90] text-[#A0C6E9] flex justify-center items-center py-4">
         <div>By Autumn Kim</div>
-        <button className="ml-4" onClick={onClickMailtoHandler}>
+        <button className="ml-4 hover:text-orange-400 cursor-pointer" onClick={onClickMailtoHandler}>
           autumnkim0409@gmail.com
         </button>
         <a
