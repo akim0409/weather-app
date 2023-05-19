@@ -18,7 +18,6 @@ $ npm start
 ### Frontend
 
 ```
-$ cd frontend
 $ npm run build
 ```
 
