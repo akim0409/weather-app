@@ -2,7 +2,7 @@
 
 [Production Site](http://autumn-kim-weather-app.com/)
 
-Barkr is an application to check 7 days weather forecast via zipcode built using React
+Weather App is an application to check 7 days weather forecast via zipcode built using React
 
 ## Development Set Up
 
